@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Report</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c80000">
+    <meta name="author" content="Tom Kinane">
+  </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,600&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Arimo', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /*Header*/
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 30px 30px 30px;
+      background: linear-gradient(to bottom, #c80000 60%, rgba(200, 0, 0, 0) 100%);
+      color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h4 {
+      font-size: 42px;
+      color: white;
+    }
+
+    .nav {
+      text-decoration: none;
+      color: inherit;
+      
+    }
+
+    .nav-item:hover {
+      text-shadow: 0px 0px 6px #ffffff;
+    }
+
+    header a {
+      margin-right: 30px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    /* Scroll Down Arrow */
+    .scroll-down {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%) rotate(135deg);
+      width: 40px;
+      height: 40px;
+      border-right: 4px solid white;
+      border-top: 4px solid white;
+      animation: bounce 2s infinite;
+    }
+
+    /* Bouncing animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0) translateX(-50%) rotate(135deg);
+      }
+      40% {
+          transform: translateY(-20px) translateX(-50%) rotate(135deg);
+      }
+      60% {
+          transform: translateY(-10px) translateX(-50%) rotate(135deg);
+      }
+    }
+
+    /*Body*/
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 90%;
+      width: 100%;
+      background-color: #c80000;
+      background-repeat: no-repeat;
+      background-size: 100% ;
+      background-position: center top;  
+      color: #000000;
+    }
+
+    .landing-view{
+      background: linear-gradient(in lab to bottom, #c80000, #ffffff);
+      max-height: 100%;
+      width: 100%;
+    }
+
+    body h1 {
+      padding-top: 100px;
+      font-size: 116px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    body h2 {
+      font-size: 60px;
+      color: #c80000;
+      border-bottom: 5px solid rgba(200, 0, 0, 0.50); 
+      padding-bottom: 0px; 
+      display: inline-block; 
+      margin: 0 auto; 
+    }
+
+    body h3 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: lighter;
+      color: #ffffff;
+    }
+
+    body h5 {
+      font-size: 20px;
+      padding-top:5px;
+      color: rgba(200, 0, 0, 0.50); 
+    }
+
+    body h6 {
+      font-size: 24px;
+      font-weight: bold;
+      padding-top:10px;
+      padding-bottom: 10px;
+    }
+    
+    body p {
+      padding-top: 10px;
+    }
+
+    .padded-list {
+      padding-left: 30px; 
+  }
+  
+    .padded-list li {
+      padding-bottom: 5px; 
+  }
+
+    button {
+      background-color: #c80000;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      height: 45px;
+      width: 200px;
+      border-radius: 12px;
+      color: #ffffff;
+    }
+
+    button:hover {
+      transform: translate(0, -4px);
+      box-shadow: 0 20px 80px -10px #c80000;
+    }
+
+    .home-btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      padding-bottom: 370px;
+      gap: 40px;
+    }
+
+    .body-info {
+      padding: 85px 50px 200px 50px;
+      background-color: #ffffff;
+      
+  }
+  </style>
+
+  <header>
+  <a class="nav-item" href="#landingView"><h4>2025</h4></a>
+  <nav>
+    <a class="nav-item" href="#meetingTheBrief">Meeting The Brief</a>
+    <a class="nav-item" href="#investigation">Investigation</a>
+    <a class="nav-item" href="#planAndDesign">Plan & Design</a>
+    <a class="nav-item" href="#create">Create</a>
+    <a class="nav-item" href="#evaluation">Evaluation</a>
+    <a class="nav-item" href="#references">References</a>
+    <a class="nav-item" href="#summaryWordCount">Summary Word Count</a>
+    
+  </nav>
+  </header>
+
+  <body>
+    <!--Landing View-->
+    <div class="landing-view">
+      <section id="landingView">
+        <h1>Computer Science<br>Project</h1>
+        <h3>2025 Leaving Cert Project<br> Higher Level</h3>
+        <div class="home-btn">
+          <button class="/heartRate.py">Advanced</button>
+          <button class="/CV .pdf">Basic</button>
+        </div>
+        <div class="scroll-down"></div>
+      </section>
+    </div>
+    <!--Report-->
+    <div class='meeting-the-rief'>
+      <section id="meetingTheBrief">
+        <div class="body-info">
+          <h2>1. Meeting The Brief</h2>
+          <h5>Max 400 (3)</h5>
+          <p>example example example </p>
+        </div>
+      </section>
+    </div>
+    <div class='Investigation'>
+      <section id="investigation">
+        <div class="body-info">
+          <h2>2. Investigation</h2>
+          <h5>Approximatly 400 (5)</h5>
+          <p>example example example example example </p>
+        </div>
+      </section>  
+    </div>
+    <div class='Plan-And-Design'>
+      <section id="planAndDesign">
+        <div class="body-info">
+          <h2>3. Plan & Design</h2>
+          <h5>Approximatly 400 (1)</h5>
+          <p>example </p>
+        </div>
+      </section>  
+    </div>
+    <div class='create'>
+      <section id="create">
+        <div class="body-info">
+          <h2>4. Create</h2>
+          <h5>Approximatly 1,000 (68)</h5>
+          <p>
+            <h6>Week 1:</h6>
+          <ul class="padded-list">
+            <li>Conducted research and finalized my topic: “Planes in Europe.”</li>
+            <li>Choose the dataset I will be using - Eurocontrol.</li>
+            <li>Tested the recommended Python libraries, Pygal and Plotly, and was inspired from the world map examples.</li>
+            <li>Began planning the structure of the project and outlined clear objectives.</li>
+          </ul>
+          <h6>Week 2:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 3:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 4:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 5:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 6:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 7:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 8:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 9:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 10:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 11:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h6>Week 12:</h6>
+          <ul class="padded-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          </p>
+        </div>
+      </section>  
+    </div>
+    <div class='evaluation'>
+      <section id="evaluation">
+        <div class="body-info">
+          <h2>5. Evaluation</h2>
+          <h5>Approximatly 300 (3)</h5>
+          <p>example example example</p>
+        </div>
+      </section>
+    </div>
+    <div class='references'>
+      <section id="references">
+        <div class="body-info">
+          <h2>6. References</h2>
+          <p></p>
+        </div>
+      </section>
+    </div>
+    <div class='summaryWordCount'>
+      <section id="summaryWordCount">
+        <div class="body-info">
+          <h2>7. Summary Word Count</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Section</th>
+                <th>Word Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Meeting the brief</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2. Investigation</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3. Plan and design</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4. Create</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5. Evaluation</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Total:</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
